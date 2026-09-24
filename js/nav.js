@@ -8,8 +8,15 @@
   const desktopQuery = window.matchMedia('(min-width: 901px)');
 
   const setMenuState = (isOpen) => {
+    const isEnglish = document.documentElement.lang === 'en';
     nav.classList.toggle('is-open', isOpen);
     toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute(
+      'aria-label',
+      isOpen
+        ? (isEnglish ? 'Close navigation' : 'Cerrar navegación')
+        : (isEnglish ? 'Open navigation' : 'Abrir navegación')
+    );
   };
 
   const closeMenu = () => setMenuState(false);
@@ -36,5 +43,9 @@
 
   desktopQuery.addEventListener('change', (event) => {
     if (event.matches) closeMenu();
+  });
+
+  document.addEventListener('portfolio:languagechange', () => {
+    setMenuState(toggle.getAttribute('aria-expanded') === 'true');
   });
 })();

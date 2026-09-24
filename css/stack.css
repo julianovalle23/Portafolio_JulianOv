@@ -64,7 +64,6 @@
     padding: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     border-right: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
@@ -75,9 +74,50 @@
     background: rgba(50, 168, 107, 0.08);
 }
 
+.technology-icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    display: grid;
+    place-items: center;
+    background: rgba(244, 244, 239, 0.035);
+    border: 1px solid var(--line);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.technology-item:hover .technology-icon {
+    background: rgba(50, 168, 107, 0.1);
+    border-color: rgba(50, 168, 107, 0.55);
+}
+
+.technology-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.technology-item h3,
+.technology-copy {
+    flex: 1;
+    min-width: 0;
+}
+
 .technology-item h3 {
     font-size: clamp(1.05rem, 2vw, 1.35rem);
     letter-spacing: -0.02em;
+}
+
+.technology-copy p {
+    margin-top: 0.45rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.technology-copy p strong {
+    color: var(--lime);
 }
 
 .technology-mark {
