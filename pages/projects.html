@@ -49,116 +49,177 @@
     <main id="main-content">
         <div class="page-shell">
             <section class="page-hero" aria-labelledby="projects-title">
-                <div class="page-kicker">
+                <div class="page-kicker reveal-up">
                     <span>03 / 04</span>
                     <span>Selected work</span>
                 </div>
 
-                <h1 class="page-title" id="projects-title">
+                <h1 class="page-title reveal-up" id="projects-title">
                     Selected
                     <span class="title-outline">projects.</span>
                 </h1>
 
-                <p class="page-intro">
+                <p class="page-intro reveal-up">
                     Proyectos relacionados con desarrollo web, software, automatización y aprendizaje
                     continuo. La información pendiente está señalada para completarla con datos reales.
                 </p>
             </section>
 
             <section class="content-section" aria-labelledby="project-list-title">
-                <h2 class="section-title" id="project-list-title">Project index</h2>
+                <h2 class="section-title reveal-up" id="project-list-title">Project index</h2>
 
+                <!-- The external information panel is appended by js/projects.js. -->
                 <div class="project-list">
-                    <article class="project-card">
-                        <div class="project-card-meta">
-                            <p class="project-number">01 / Java</p>
-                            <span class="project-status">In development</span>
-                        </div>
+                    <div class="project-entry" data-project-entry>
+                        <article
+                            class="project-card reveal-up"
+                            data-project-card
+                            data-project-id="vart"
+                            data-project-name="VART"
+                            data-project-primary-icon="java"
+                            data-project-primary-label="Java"
+                            data-project-image-count="2"
+                        >
+                            <div class="project-card-flip" data-project-flip>
+                                <div class="project-card-flip-inner" data-project-flip-inner>
+                                    <div class="project-card-face project-card-front">
+                                        <div class="project-card-meta">
+                                            <p class="project-number">01 / Java</p>
+                                            <span class="project-status">In development</span>
+                                        </div>
 
-                        <div class="project-content">
-                            <h2>VART</h2>
-                            <p class="project-description">
-                                Proyecto actualmente en desarrollo, construido con Java, Spring Boot y PostgreSQL.
-                            </p>
-                            <ul class="tag-list" aria-label="Tecnologías de VART">
-                                <li class="tag">Java</li>
-                                <li class="tag">Spring Boot</li>
-                                <li class="tag">PostgreSQL</li>
-                            </ul>
-                        </div>
+                                        <div class="project-content">
+                                            <h2>VART</h2>
+                                            <p class="project-description">
+                                                Proyecto actualmente en desarrollo, construido con Java, Spring Boot y PostgreSQL.
+                                            </p>
+                                            <ul class="tag-list" aria-label="Tecnologías de VART">
+                                                <li class="tag">Java</li>
+                                                <li class="tag">Spring Boot</li>
+                                                <li class="tag">PostgreSQL</li>
+                                            </ul>
+                                        </div>
 
-                        <div class="project-actions">
-                            <a class="button button-primary" href="projects/vart.html">
-                                View project <span class="button-arrow" aria-hidden="true">↗</span>
-                            </a>
-                            <button class="button button-secondary button-placeholder" type="button" disabled>
-                                GitHub · pending URL
-                            </button>
-                        </div>
-                    </article>
+                                        <div class="project-actions">
+                                            <a class="button button-primary" href="projects/vart.html">
+                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                            <button class="button button-secondary button-placeholder" type="button" disabled>
+                                                GitHub · pending URL
+                                            </button>
+                                        </div>
+                                    </div>
 
-                    <article class="project-card">
-                        <div class="project-card-meta">
-                            <p class="project-number">02 / Automation</p>
-                            <span class="project-status status-pending">Status to define</span>
-                        </div>
+                                    <div class="project-card-face project-card-back" data-project-back aria-hidden="true">
+                                        <div class="project-card-back-content" data-project-back-content></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-                        <div class="project-content">
-                            <h2>SmartCity Fix</h2>
-                            <p class="project-description">
-                                Proyecto relacionado con la clasificación y gestión de reportes de problemas
-                                urbanos mediante automatización.
-                            </p>
-                            <ul class="tag-list" aria-label="Tecnologías de SmartCity Fix">
-                                <li class="tag">Web</li>
-                                <li class="tag">n8n</li>
-                                <li class="tag">AI</li>
-                                <li class="tag">Automation</li>
-                            </ul>
-                        </div>
+                    <div class="project-entry" data-project-entry>
+                        <article
+                            class="project-card reveal-up"
+                            data-project-card
+                            data-project-id="smartcity-fix"
+                            data-project-name="SmartCity Fix"
+                            data-project-primary-icon="n8n"
+                            data-project-primary-label="n8n"
+                            data-project-image-count="2"
+                        >
+                            <div class="project-card-flip" data-project-flip>
+                                <div class="project-card-flip-inner" data-project-flip-inner>
+                                    <div class="project-card-face project-card-front">
+                                        <div class="project-card-meta">
+                                            <p class="project-number">02 / Automation</p>
+                                            <span class="project-status status-pending">Status to define</span>
+                                        </div>
 
-                        <div class="project-actions">
-                            <a class="button button-primary" href="projects/smartcity-fix.html">
-                                View project <span class="button-arrow" aria-hidden="true">↗</span>
-                            </a>
-                            <button class="button button-secondary button-placeholder" type="button" disabled>
-                                GitHub · pending URL
-                            </button>
-                        </div>
-                    </article>
+                                        <div class="project-content">
+                                            <h2>SmartCity Fix</h2>
+                                            <p class="project-description">
+                                                Proyecto relacionado con la clasificación y gestión de reportes de problemas
+                                                urbanos mediante automatización.
+                                            </p>
+                                            <ul class="tag-list" aria-label="Tecnologías de SmartCity Fix">
+                                                <li class="tag">Web</li>
+                                                <li class="tag">n8n</li>
+                                                <li class="tag">AI</li>
+                                                <li class="tag">Automation</li>
+                                            </ul>
+                                        </div>
 
-                    <article class="project-card">
-                        <div class="project-card-meta">
-                            <p class="project-number">03 / Web</p>
-                            <span class="project-status">Available</span>
-                        </div>
+                                        <div class="project-actions">
+                                            <a class="button button-primary" href="projects/smartcity-fix.html">
+                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                            <button class="button button-secondary button-placeholder" type="button" disabled>
+                                                GitHub · pending URL
+                                            </button>
+                                        </div>
+                                    </div>
 
-                        <div class="project-content">
-                            <h2>This Portfolio</h2>
-                            <p class="project-description">
-                                Portafolio multipágina construido con HTML, CSS, JavaScript y Canvas para
-                                presentar mi perfil, stack y proyectos.
-                            </p>
-                            <ul class="tag-list" aria-label="Tecnologías del portafolio">
-                                <li class="tag">HTML</li>
-                                <li class="tag">CSS</li>
-                                <li class="tag">JavaScript</li>
-                                <li class="tag">Canvas</li>
-                            </ul>
-                        </div>
+                                    <div class="project-card-face project-card-back" data-project-back aria-hidden="true">
+                                        <div class="project-card-back-content" data-project-back-content></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-                        <div class="project-actions">
-                            <a class="button button-primary" href="projects/portfolio.html">
-                                View project <span class="button-arrow" aria-hidden="true">↗</span>
-                            </a>
-                            <a
-                                class="button button-secondary"
-                                href="https://github.com/julianovalle23"
-                            >
-                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
-                            </a>
-                        </div>
-                    </article>
+                    <div class="project-entry" data-project-entry>
+                        <article
+                            class="project-card reveal-up"
+                            data-project-card
+                            data-project-id="portfolio"
+                            data-project-name="This Portfolio"
+                            data-project-primary-icon="html5"
+                            data-project-primary-label="HTML5"
+                            data-project-image-count="2"
+                        >
+                            <div class="project-card-flip" data-project-flip>
+                                <div class="project-card-flip-inner" data-project-flip-inner>
+                                    <div class="project-card-face project-card-front">
+                                        <div class="project-card-meta">
+                                            <p class="project-number">03 / Web</p>
+                                            <span class="project-status">Available</span>
+                                        </div>
+
+                                        <div class="project-content">
+                                            <h2>This Portfolio</h2>
+                                            <p class="project-description">
+                                                Portafolio multipágina construido con HTML, CSS, JavaScript y Canvas para
+                                                presentar mi perfil, stack y proyectos.
+                                            </p>
+                                            <ul class="tag-list" aria-label="Tecnologías del portafolio">
+                                                <li class="tag">HTML</li>
+                                                <li class="tag">CSS</li>
+                                                <li class="tag">JavaScript</li>
+                                                <li class="tag">Canvas</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="project-actions">
+                                            <a class="button button-primary" href="projects/portfolio.html">
+                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                            <a
+                                                class="button button-secondary"
+                                                href="https://github.com/julianovalle23"
+                                            >
+                                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card-face project-card-back" data-project-back aria-hidden="true">
+                                        <div class="project-card-back-content" data-project-back-content></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
         </div>
@@ -174,6 +235,7 @@
     <script src="../js/i18n.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/reveal.js"></script>
+    <script src="../js/projects.js"></script>
 </body>
 
 </html>

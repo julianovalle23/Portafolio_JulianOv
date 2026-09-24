@@ -95,6 +95,99 @@
     line-height: 1.7;
 }
 
+.mission-vision-section {
+    overflow-x: clip;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
+    margin-top: clamp(2.5rem, 6vw, 5rem);
+}
+
+.mission-vision-card {
+    position: relative;
+    min-width: 0;
+    min-height: clamp(260px, 30vw, 360px);
+    padding: clamp(1.5rem, 4vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    overflow: hidden;
+    background: rgba(16, 19, 16, 0.28);
+    border: 1px solid var(--line);
+}
+
+.mission-vision-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: clamp(3rem, 8vw, 6rem);
+    height: 1px;
+    background: var(--lime);
+}
+
+.mission-vision-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: clamp(3rem, 8vw, 6rem);
+    background: var(--line);
+}
+
+.mission-vision-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.mission-vision-index {
+    color: var(--lime);
+    font-size: 0.65rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.mission-vision-card h3 {
+    font-size: clamp(1.6rem, 3vw, 2.75rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.mission-vision-card p {
+    max-width: 620px;
+    color: var(--gray);
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.mission-vision-detail {
+    position: relative;
+    width: min(100%, 12rem);
+    height: 1px;
+    background: var(--line);
+}
+
+.mission-vision-detail::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    background: var(--lime);
+}
+
 @media (max-width: 800px) {
     .about-intro-grid,
     .focus-layout {
@@ -103,6 +196,10 @@
 
     .about-copy {
         max-width: 650px;
+    }
+
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -113,5 +210,10 @@
 
     .approach-card {
         min-height: 220px;
+    }
+
+    .mission-vision-card {
+        min-height: 240px;
+        padding: 1.5rem;
     }
 }

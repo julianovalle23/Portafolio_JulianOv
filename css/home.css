@@ -22,7 +22,6 @@
     font-weight: 700;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    animation: hero-enter 0.65s ease both;
 }
 
 .hero-eyebrow::before {
@@ -40,7 +39,6 @@
     line-height: 0.84;
     letter-spacing: -0.075em;
     text-transform: uppercase;
-    animation: hero-enter 0.65s 0.08s ease both;
 }
 
 .hero-title .title-outline {
@@ -59,7 +57,6 @@
     letter-spacing: 0.13em;
     line-height: 1.7;
     text-transform: uppercase;
-    animation: hero-enter 0.65s 0.16s ease both;
 }
 
 .hero-actions {
@@ -67,7 +64,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    animation: hero-enter 0.65s 0.24s ease both;
 }
 
 .button-arrow {
@@ -107,16 +103,6 @@
     font-size: 0.58rem;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.2em;
-}
-
-@keyframes hero-enter {
-    from {
-        transform: translateY(14px);
-    }
-
-    to {
-        transform: translateY(0);
-    }
 }
 
 @media (max-width: 760px) {

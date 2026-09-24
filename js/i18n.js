@@ -70,7 +70,13 @@
       text('.approach-card:nth-child(3) h3', 'Trabajo en equipo', 'Teamwork'),
       text('.approach-card:nth-child(3) p', 'Comunicar ideas, escuchar observaciones y trabajar de forma colaborativa.', 'Communicate ideas, listen to feedback, and work collaboratively.'),
       text('.approach-card:nth-child(4) h3', 'Adaptabilidad', 'Adaptability'),
-      text('.approach-card:nth-child(4) p', 'Mantener una actitud flexible frente a cambios y nuevos requerimientos.', 'Maintain a flexible attitude toward change and new requirements.')
+      text('.approach-card:nth-child(4) p', 'Mantener una actitud flexible frente a cambios y nuevos requerimientos.', 'Maintain a flexible attitude toward change and new requirements.'),
+      text('.mission-vision-section .section-label span:last-child', 'Misión y visión', 'Mission & vision'),
+      text('#mission-vision-title', 'Misión y visión', 'Mission & vision'),
+      text('[data-mission-card="mission"] h3', 'Misión', 'Mission'),
+      text('[data-mission-card="mission"] p', 'Desarrollar soluciones de software que aporten valor a las personas y organizaciones, utilizando la programación, el aprendizaje constante y el trabajo en equipo para transformar necesidades en soluciones tecnológicas funcionales.', 'Develop software solutions that add value to people and organizations, using programming, continuous learning, and teamwork to transform needs into functional technological solutions.'),
+      text('[data-mission-card="vision"] h3', 'Visión', 'Vision'),
+      text('[data-mission-card="vision"] p', 'Convertirme en un desarrollador de software capaz de participar en proyectos tecnológicos de alto impacto, seguir creciendo profesionalmente y aportar soluciones innovadoras en empresas de alcance nacional e internacional.', 'Become a software developer capable of participating in high-impact technology projects, continuing to grow professionally, and contributing innovative solutions to companies with national and international reach.')
     ],
 
     stack: [
@@ -99,20 +105,20 @@
       markup('.page-title', 'Proyectos <span class="title-outline">seleccionados.</span>', 'Selected <span class="title-outline">projects.</span>'),
       text('.page-intro', 'Proyectos relacionados con desarrollo web, software, automatización y aprendizaje continuo. La información pendiente está señalada para completarla con datos reales.', 'Projects related to web development, software, automation, and continuous learning. Pending information is clearly marked so it can be completed with real data.'),
       text('#project-list-title', 'Índice de proyectos', 'Project index'),
-      text('.project-card:nth-child(1) .project-description', 'Proyecto actualmente en desarrollo, construido con Java, Spring Boot y PostgreSQL.', 'Project currently in development, built with Java, Spring Boot, and PostgreSQL.'),
-      text('.project-card:nth-child(1) .project-status', 'En desarrollo', 'In development'),
-      attribute('.project-card:nth-child(1) .tag-list', 'aria-label', 'Tecnologías de VART', 'VART technologies'),
-      markup('.project-card:nth-child(1) .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>'),
-      text('.project-card:nth-child(2) .project-number', '02 / Automatización', '02 / Automation'),
-      text('.project-card:nth-child(2) .project-status', 'Por definir', 'Status to define'),
-      text('.project-card:nth-child(2) .project-description', 'Proyecto relacionado con la clasificación y gestión de reportes de problemas urbanos mediante automatización.', 'Project focused on classifying and managing reports of urban problems through automation.'),
-      attribute('.project-card:nth-child(2) .tag-list', 'aria-label', 'Tecnologías de SmartCity Fix', 'SmartCity Fix technologies'),
-      markup('.project-card:nth-child(2) .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>'),
-      text('.project-card:nth-child(3) .project-status', 'Disponible', 'Available'),
-      text('.project-card:nth-child(3) h2', 'Este portafolio', 'This Portfolio'),
-      text('.project-card:nth-child(3) .project-description', 'Portafolio multipágina construido con HTML, CSS, JavaScript y Canvas para presentar mi perfil, stack y proyectos.', 'Multipage portfolio built with HTML, CSS, JavaScript, and Canvas to showcase my profile, stack, and projects.'),
-      attribute('.project-card:nth-child(3) .tag-list', 'aria-label', 'Tecnologías del portafolio', 'Portfolio technologies'),
-      markup('.project-card:nth-child(3) .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>')
+      text('.project-card[data-project-id="vart"] .project-description', 'Proyecto actualmente en desarrollo, construido con Java, Spring Boot y PostgreSQL.', 'Project currently in development, built with Java, Spring Boot, and PostgreSQL.'),
+      text('.project-card[data-project-id="vart"] .project-status', 'En desarrollo', 'In development'),
+      attribute('.project-card[data-project-id="vart"] .tag-list', 'aria-label', 'Tecnologías de VART', 'VART technologies'),
+      markup('.project-card[data-project-id="vart"] .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>'),
+      text('.project-card[data-project-id="smartcity-fix"] .project-number', '02 / Automatización', '02 / Automation'),
+      text('.project-card[data-project-id="smartcity-fix"] .project-status', 'Por definir', 'Status to define'),
+      text('.project-card[data-project-id="smartcity-fix"] .project-description', 'Proyecto relacionado con la clasificación y gestión de reportes de problemas urbanos mediante automatización.', 'Project focused on classifying and managing reports of urban problems through automation.'),
+      attribute('.project-card[data-project-id="smartcity-fix"] .tag-list', 'aria-label', 'Tecnologías de SmartCity Fix', 'SmartCity Fix technologies'),
+      markup('.project-card[data-project-id="smartcity-fix"] .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>'),
+      text('.project-card[data-project-id="portfolio"] .project-status', 'Disponible', 'Available'),
+      text('.project-card[data-project-id="portfolio"] h2', 'Este portafolio', 'This Portfolio'),
+      text('.project-card[data-project-id="portfolio"] .project-description', 'Portafolio multipágina construido con HTML, CSS, JavaScript y Canvas para presentar mi perfil, stack y proyectos.', 'Multipage portfolio built with HTML, CSS, JavaScript, and Canvas to showcase my profile, stack, and projects.'),
+      attribute('.project-card[data-project-id="portfolio"] .tag-list', 'aria-label', 'Tecnologías del portafolio', 'Portfolio technologies'),
+      markup('.project-card[data-project-id="portfolio"] .project-actions a:first-child', 'Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>', 'View project <span class="button-arrow" aria-hidden="true">↗</span>')
     ],
 
     contact: [
@@ -122,9 +128,8 @@
       markup('.contact-title', 'Construyamos <span>algo.</span>', "Let's build <span>something.</span>"),
       text('.contact-prompt', '¿Tienes una idea, una oportunidad o un proyecto? Conversemos.', 'Have an idea, an opportunity, or a project? Let’s talk.'),
       attribute('.contact-options', 'aria-label', 'Datos de contacto', 'Contact details'),
-      text('.option-state', 'Pendiente', 'Pending'),
-      markup('.cv-panel p', 'Descarga mi CV.<span class="placeholder-path">Marcador: reemplaza esta ruta después de agregar el archivo.</span>', 'Download my CV.<span class="placeholder-path">Placeholder: replace this path after adding the file.</span>'),
-      text('.cv-panel .button', 'CV · archivo pendiente', 'CV · pending file')
+      markup('.cv-panel p', 'Descarga mi CV.<span class="placeholder-path">Hoja de vida · PDF</span>', 'Download my CV.<span class="placeholder-path">Hoja de vida · PDF</span>'),
+      markup('.cv-panel .button', 'Descargar CV <span class="button-arrow" aria-hidden="true">↓</span>', 'Download CV <span class="button-arrow" aria-hidden="true">↓</span>')
     ],
 
     vart: [

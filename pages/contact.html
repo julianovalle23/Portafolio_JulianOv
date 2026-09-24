@@ -49,7 +49,7 @@
     <main id="main-content">
         <div class="page-shell">
             <section class="contact-main" aria-labelledby="contact-title">
-                <div>
+                <div class="reveal-left">
                     <p class="page-kicker">
                         <span>04 / 04</span>
                         <span>Contact</span>
@@ -65,7 +65,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="reveal-right">
                     <div class="contact-options" aria-label="Datos de contacto">
                         <a class="contact-option" href="mailto:ovalleparrajuliandavid34@gmail.com">
                             <span class="contact-option-number">01</span>
@@ -82,24 +82,33 @@
                             <span class="contact-option-arrow" aria-hidden="true">↗</span>
                         </a>
 
-                        <button class="contact-option" type="button" disabled>
+                        <a
+                            class="contact-option"
+                            href="https://www.linkedin.com/in/julian-david-ovalle-parra-604782424/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <span class="contact-option-number">03</span>
-                            <span class="contact-option-name">LinkedIn <span class="option-state">Pending</span></span>
-                            <span class="contact-option-arrow" aria-hidden="true">—</span>
-                        </button>
+                            <span class="contact-option-name">LinkedIn</span>
+                            <span class="contact-option-arrow" aria-hidden="true">↗</span>
+                        </a>
                     </div>
 
                     <div class="cv-panel">
                         <div>
                             <p>
                                 Descarga mi CV.
-                                <span class="placeholder-path">Placeholder: reemplaza esta ruta después de agregar el archivo.</span>
+                                <span class="placeholder-path">Hoja de vida · PDF</span>
                             </p>
                         </div>
 
-                        <button class="button button-primary button-placeholder" type="button" disabled>
-                            CV · pending file
-                        </button>
+                        <a
+                            class="button button-primary"
+                            href="../assets/cv/Hoja%20de%20vida.pdf"
+                            download
+                        >
+                            Download CV <span class="button-arrow" aria-hidden="true">↓</span>
+                        </a>
                     </div>
                 </div>
             </section>

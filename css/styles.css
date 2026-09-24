@@ -496,15 +496,49 @@ footer {
     text-transform: uppercase;
 }
 
-.reveal-ready {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+/* Opt-in viewport reveals. JavaScript adds reveal-ready after its feature checks. */
+.reveal-left,
+.reveal-right,
+.reveal-up {
+    --reveal-distance: clamp(1.5rem, 4vw, 3rem);
+    --reveal-duration: 0.8s;
+    --reveal-easing: cubic-bezier(0.22, 1, 0.36, 1);
+    --reveal-delay: 0ms;
+    --reveal-x: 0px;
+    --reveal-y: 0px;
+
+    transition:
+        opacity var(--reveal-duration) var(--reveal-easing),
+        transform var(--reveal-duration) var(--reveal-easing);
+    transition-delay: var(--reveal-delay);
 }
 
-.reveal-ready.is-visible {
+.reveal-left {
+    --reveal-x: calc(0px - var(--reveal-distance));
+}
+
+.reveal-right {
+    --reveal-x: var(--reveal-distance);
+}
+
+.reveal-up {
+    --reveal-y: var(--reveal-distance);
+}
+
+.reveal-left.reveal-ready,
+.reveal-right.reveal-ready,
+.reveal-up.reveal-ready {
+    opacity: 0;
+    will-change: opacity, transform;
+    transform: translate3d(var(--reveal-x), var(--reveal-y), 0);
+}
+
+.reveal-left.reveal-ready.is-visible,
+.reveal-right.reveal-ready.is-visible,
+.reveal-up.reveal-ready.is-visible {
     opacity: 1;
-    transform: translateY(0);
+    will-change: auto;
+    transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 900px) {
@@ -642,5 +676,16 @@ footer {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
+    }
+
+    .reveal-left,
+    .reveal-right,
+    .reveal-up,
+    .reveal-left.reveal-ready,
+    .reveal-right.reveal-ready,
+    .reveal-up.reveal-ready {
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 }
