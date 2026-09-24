@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Contacto de Julian, Junior Software Developer en Colombia."
+    >
+    <title>Contact | Julian</title>
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="about.html">About</a>
+            <a href="stack.html">Stack</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="contact.html" aria-current="page">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="contact-main" aria-labelledby="contact-title">
+                <div>
+                    <p class="page-kicker">
+                        <span>04 / 04</span>
+                        <span>Contact</span>
+                    </p>
+
+                    <h1 class="contact-title" id="contact-title">
+                        Let's build
+                        <span>something.</span>
+                    </h1>
+
+                    <p class="contact-prompt">
+                        ¿Tienes una idea, una oportunidad o un proyecto? Conversemos.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="contact-options" aria-label="Datos de contacto">
+                        <a class="contact-option" href="mailto:ovalleparrajuliandavid34@gmail.com">
+                            <span class="contact-option-number">01</span>
+                            <span class="contact-option-name">Email</span>
+                            <span class="contact-option-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <a
+                            class="contact-option"
+                            href="https://github.com/julianovalle23"
+                        >
+                            <span class="contact-option-number">02</span>
+                            <span class="contact-option-name">GitHub</span>
+                            <span class="contact-option-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <button class="contact-option" type="button" disabled>
+                            <span class="contact-option-number">03</span>
+                            <span class="contact-option-name">LinkedIn <span class="option-state">Pending</span></span>
+                            <span class="contact-option-arrow" aria-hidden="true">—</span>
+                        </button>
+                    </div>
+
+                    <div class="cv-panel">
+                        <div>
+                            <p>
+                                Descarga mi CV.
+                                <span class="placeholder-path">Placeholder: reemplaza esta ruta después de agregar el archivo.</span>
+                            </p>
+                        </div>
+
+                        <button class="button button-primary button-placeholder" type="button" disabled>
+                            CV · pending file
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/reveal.js"></script>
+</body>
+
+</html>

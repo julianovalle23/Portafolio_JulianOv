@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Tecnologías y herramientas que Julian utiliza y continúa aprendiendo como Junior Software Developer."
+    >
+    <title>Stack | Julian</title>
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stack.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="about.html">About</a>
+            <a href="stack.html" aria-current="page">Stack</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="contact.html">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="page-hero" aria-labelledby="stack-title">
+                <div class="page-kicker">
+                    <span>02 / 04</span>
+                    <span>Tech stack</span>
+                </div>
+
+                <h1 class="page-title" id="stack-title">
+                    Tools for
+                    <span class="title-outline">building.</span>
+                </h1>
+
+                <p class="page-intro">
+                    Tecnologías y herramientas que utilizo en mi proceso de aprendizaje y construcción.
+                    Esta es mi stack actual, no una clasificación de experiencia.
+                </p>
+            </section>
+
+            <section class="content-section" aria-labelledby="stack-overview-title">
+                <div class="stack-intro">
+                    <div>
+                        <p class="section-label">
+                            <span>01</span>
+                            <span>Overview</span>
+                        </p>
+                        <h2 class="section-title" id="stack-overview-title">Un stack para seguir creciendo.</h2>
+                    </div>
+
+                    <p class="stack-note">
+                        <strong>Learning stack</strong>
+                        Cada tecnología representa una herramienta de aprendizaje o una área que sigo
+                        desarrollando.
+                    </p>
+                </div>
+
+                <div class="stack-groups">
+                    <section class="stack-group" aria-labelledby="languages-title">
+                        <div class="group-heading">
+                            <p class="section-label"><span>01</span></p>
+                            <h2 id="languages-title">Languages</h2>
+                        </div>
+
+                        <ul class="technology-list">
+                            <li class="technology-item"><h3>Java</h3><span class="technology-mark">01</span></li>
+                            <li class="technology-item"><h3>JavaScript</h3><span class="technology-mark">02</span></li>
+                            <li class="technology-item"><h3>Python</h3><span class="technology-mark">03</span></li>
+                            <li class="technology-item"><h3>SQL</h3><span class="technology-mark">04</span></li>
+                            <li class="technology-item"><h3>HTML</h3><span class="technology-mark">05</span></li>
+                            <li class="technology-item"><h3>CSS</h3><span class="technology-mark">06</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="stack-group" aria-labelledby="backend-title">
+                        <div class="group-heading">
+                            <p class="section-label"><span>02</span></p>
+                            <h2 id="backend-title">Backend</h2>
+                        </div>
+
+                        <ul class="technology-list">
+                            <li class="technology-item"><h3>Spring Boot</h3><span class="technology-mark">01</span></li>
+                            <li class="technology-item"><h3>REST APIs</h3><span class="technology-mark">02</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="stack-group" aria-labelledby="databases-title">
+                        <div class="group-heading">
+                            <p class="section-label"><span>03</span></p>
+                            <h2 id="databases-title">Databases</h2>
+                        </div>
+
+                        <ul class="technology-list">
+                            <li class="technology-item"><h3>PostgreSQL</h3><span class="technology-mark">01</span></li>
+                            <li class="technology-item"><h3>MySQL</h3><span class="technology-mark">02</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="stack-group" aria-labelledby="tools-title">
+                        <div class="group-heading">
+                            <p class="section-label"><span>04</span></p>
+                            <h2 id="tools-title">Tools</h2>
+                        </div>
+
+                        <ul class="technology-list">
+                            <li class="technology-item"><h3>Git</h3><span class="technology-mark">01</span></li>
+                            <li class="technology-item"><h3>GitHub</h3><span class="technology-mark">02</span></li>
+                            <li class="technology-item"><h3>Docker</h3><span class="technology-mark">03</span></li>
+                            <li class="technology-item"><h3>n8n</h3><span class="technology-mark">04</span></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <p class="stack-footer-note">
+                    Mi objetivo es profundizar estas herramientas según las necesidades de cada proyecto,
+                    sin presentar niveles que aún no estén definidos.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/reveal.js"></script>
+</body>
+
+</html>

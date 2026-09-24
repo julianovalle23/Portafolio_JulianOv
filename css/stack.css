@@ -1,0 +1,121 @@
+.stack-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+}
+
+.stack-intro .section-copy {
+    max-width: 780px;
+}
+
+.stack-note {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    color: var(--gray);
+    font-size: 0.72rem;
+    letter-spacing: 0.09em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.stack-note strong {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: var(--lime);
+    font-size: 0.67rem;
+    letter-spacing: 0.18em;
+}
+
+.stack-groups {
+    display: grid;
+    gap: clamp(4rem, 8vw, 7rem);
+}
+
+.stack-group {
+    display: grid;
+    grid-template-columns: minmax(200px, 0.55fr) minmax(0, 1.45fr);
+    gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.group-heading {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.group-heading h2 {
+    margin-top: 1rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.technology-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    list-style: none;
+}
+
+.technology-item {
+    min-height: 110px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.technology-item:hover {
+    background: rgba(50, 168, 107, 0.08);
+}
+
+.technology-item h3 {
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    letter-spacing: -0.02em;
+}
+
+.technology-mark {
+    color: var(--lime);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.stack-footer-note {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .stack-intro,
+    .stack-group {
+        grid-template-columns: 1fr;
+    }
+
+    .group-heading {
+        position: static;
+    }
+}
+
+@media (max-width: 560px) {
+    .technology-list {
+        grid-template-columns: 1fr;
+    }
+
+    .technology-item {
+        min-height: 90px;
+    }
+}

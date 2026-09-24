@@ -1,0 +1,135 @@
+.contact-main {
+    min-height: calc(100svh - 92px);
+    padding-block: clamp(5rem, 11vw, 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-title {
+    max-width: 1100px;
+    font-size: clamp(4.2rem, 11.5vw, 11rem);
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+}
+
+.contact-title span {
+    display: block;
+    width: fit-content;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--lime);
+}
+
+.contact-prompt {
+    max-width: 520px;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    color: var(--gray);
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    line-height: 1.7;
+}
+
+.contact-options {
+    margin-top: clamp(4rem, 8vw, 7rem);
+    border-top: 1px solid var(--line);
+}
+
+.contact-option {
+    width: 100%;
+    min-height: 88px;
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+    color: var(--white);
+    font: inherit;
+    text-align: left;
+    transition: padding 0.2s ease, color 0.2s ease;
+}
+
+.contact-option:not(:disabled):hover {
+    padding-inline: 0.8rem;
+    color: var(--lime);
+}
+
+.contact-option:disabled {
+    cursor: not-allowed;
+}
+
+.contact-option:disabled .contact-option-name,
+.contact-option:disabled .contact-option-arrow {
+    color: var(--gray);
+}
+
+.contact-option-number {
+    color: var(--muted);
+    font-size: 0.6rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.12em;
+}
+
+.contact-option-name {
+    font-size: clamp(1.3rem, 3.5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+.option-state {
+    margin-left: 0.6rem;
+    color: var(--muted);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    vertical-align: middle;
+}
+
+.contact-option-arrow {
+    color: var(--lime);
+    font-size: 1.2rem;
+}
+
+.cv-panel {
+    margin-top: clamp(4rem, 8vw, 7rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cv-panel p {
+    max-width: 560px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.placeholder-path {
+    display: block;
+    margin-top: 0.45rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+    .contact-main {
+        min-height: calc(100svh - 78px);
+    }
+
+    .contact-title {
+        font-size: clamp(2.55rem, 12.5vw, 5.5rem);
+    }
+
+    .contact-option {
+        grid-template-columns: 38px 1fr auto;
+    }
+
+    .cv-panel {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

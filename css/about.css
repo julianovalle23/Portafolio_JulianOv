@@ -1,0 +1,117 @@
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    align-items: end;
+    gap: clamp(3rem, 9vw, 9rem);
+}
+
+.about-lead {
+    max-width: 760px;
+    color: var(--white);
+    font-size: clamp(1.35rem, 2.4vw, 2rem);
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+}
+
+.about-lead span {
+    color: var(--lime);
+}
+
+.about-copy {
+    max-width: 520px;
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.about-copy p + p {
+    margin-top: 1.25rem;
+}
+
+.focus-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+    gap: clamp(3rem, 8vw, 8rem);
+}
+
+.focus-list {
+    border-top: 1px solid var(--line);
+    list-style: none;
+}
+
+.focus-item {
+    min-height: 64px;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--white);
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+}
+
+.focus-item span {
+    color: var(--muted);
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.approach-card {
+    min-height: 250px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.approach-number {
+    color: var(--lime);
+    font-size: 0.62rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.16em;
+}
+
+.approach-card h3 {
+    margin-top: 3rem;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+.approach-card p {
+    max-width: 420px;
+    margin-top: 1rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .about-intro-grid,
+    .focus-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-copy {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 600px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-card {
+        min-height: 220px;
+    }
+}
