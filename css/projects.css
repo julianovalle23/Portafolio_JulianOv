@@ -710,3 +710,227 @@
         transition-delay: 0s;
     }
 }
+
+/* Detail pages: feature list, architecture flow, metrics, RAG example, screenshots */
+.detail-list {
+    max-width: 720px;
+    margin-top: 1.25rem;
+    list-style: none;
+}
+
+.detail-list li {
+    position: relative;
+    padding: 0.85rem 0 0.85rem 1.6rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.detail-list li::before {
+    content: "";
+    position: absolute;
+    top: 1.55rem;
+    left: 0;
+    width: 0.6rem;
+    height: 1px;
+    background: var(--lime);
+}
+
+.flow-steps {
+    margin-top: clamp(2rem, 5vw, 3.5rem);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    list-style: none;
+}
+
+.flow-step {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    border: 1px solid var(--line);
+    background: rgba(16, 19, 16, 0.72);
+}
+
+.flow-index {
+    color: var(--lime);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-variant-numeric: tabular-nums;
+}
+
+.flow-step h3 {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.flow-step p {
+    margin-top: 0.6rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.metric-grid {
+    margin-top: clamp(2rem, 5vw, 3.5rem);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+}
+
+.metric {
+    padding: 1.75rem 1.5rem 1.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.metric strong {
+    color: var(--lime);
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    letter-spacing: -0.05em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+
+.metric span {
+    color: var(--gray);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.rag-example {
+    margin-top: clamp(2rem, 5vw, 3.5rem);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.rag-example-panel {
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    background: rgba(16, 19, 16, 0.72);
+}
+
+.rag-example-label {
+    margin-bottom: 0.9rem;
+    color: var(--muted);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.rag-example-label:not(:first-child) {
+    margin-top: 1.75rem;
+}
+
+.rag-example-query,
+.rag-example-answer {
+    color: var(--white);
+    line-height: 1.7;
+}
+
+.rag-sources {
+    list-style: none;
+}
+
+.rag-sources li {
+    padding-block: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--gray);
+    font-size: 0.86rem;
+}
+
+.rag-sources li strong {
+    color: var(--white);
+    font-variant-numeric: tabular-nums;
+}
+
+.rag-sources li.is-used span,
+.rag-sources li.is-used strong {
+    color: var(--lime);
+}
+
+.rag-steps {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.rag-steps code {
+    padding: 0.05rem 0.35rem;
+    background: rgba(244, 244, 239, 0.07);
+    color: var(--white);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.85em;
+}
+
+.rag-example-note {
+    margin-top: 1.5rem;
+    padding: 1rem 1.1rem;
+    border-left: 2px solid var(--lime-dark);
+    background: rgba(244, 244, 239, 0.035);
+    color: var(--gray);
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.screenshot {
+    margin: 0;
+    border: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screenshot figcaption {
+    padding: 0.85rem 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--gray);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .flow-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rag-example {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .flow-steps,
+    .metric-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    /* "seleccionados." is too long to fit a phone at the shared title size */
+    .page-title .title-outline {
+        font-size: 0.8em;
+    }
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
         name="description"
-        content="Proyectos de Julian: VART, SmartCity Fix y este portafolio."
+        content="Proyectos de Julian: NEXUS Support, CampusDesk, TechStore, un chatbot de ventas con n8n y este portafolio."
     >
     <title>Projects | Julian</title>
     <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
@@ -59,9 +59,9 @@
                     <span class="title-outline">projects.</span>
                 </h1>
 
-                <p class="page-intro reveal-up">
-                    Proyectos relacionados con desarrollo web, software, automatización y aprendizaje
-                    continuo. La información pendiente está señalada para completarla con datos reales.
+                <p class="page-intro reveal-up" data-en="Projects I have built with Java, Spring Boot, databases, automation, and applied AI. Open a card to see its technologies and screenshots, or visit the project page for the full story.">
+                    Proyectos que he construido con Java, Spring Boot, bases de datos, automatización e IA aplicada.
+                    Abre una tarjeta para ver sus tecnologías y capturas, o entra a la página del proyecto para ver el detalle completo.
                 </p>
             </section>
 
@@ -74,39 +74,41 @@
                         <article
                             class="project-card reveal-up"
                             data-project-card
-                            data-project-id="vart"
-                            data-project-name="VART"
-                            data-project-primary-icon="java"
-                            data-project-primary-label="Java"
-                            data-project-image-count="2"
+                            data-project-id="nexus-support"
+                            data-project-name="NEXUS Support"
+                            data-project-primary-icon="spring-boot"
+                            data-project-primary-label="Spring Boot"
+                            data-project-images='["../assets/images/projects/nexus-support/dashboard.png","../assets/images/projects/nexus-support/incidentes.png","../assets/images/projects/nexus-support/articulos.png"]'
+                            data-project-image-labels="Dashboard analítico|Incidentes|Base de conocimiento"
                         >
                             <div class="project-card-flip" data-project-flip>
                                 <div class="project-card-flip-inner" data-project-flip-inner>
                                     <div class="project-card-face project-card-front">
                                         <div class="project-card-meta">
-                                            <p class="project-number">01 / Java</p>
-                                            <span class="project-status">In development</span>
+                                            <p class="project-number" data-en="01 / Full stack + AI">01 / Full stack + IA</p>
+                                            <span class="project-status" data-en="Completed">Completado</span>
                                         </div>
 
                                         <div class="project-content">
-                                            <h2>VART</h2>
-                                            <p class="project-description">
-                                                Proyecto actualmente en desarrollo, construido con Java, Spring Boot y PostgreSQL.
-                                            </p>
-                                            <ul class="tag-list" aria-label="Tecnologías de VART">
+                                            <h2 data-en="NEXUS Support">NEXUS Support</h2>
+                                            <p class="project-description" data-en="Help desk with an AI assistant (RAG): it searches a knowledge base vectorized in Qdrant through n8n workflows and answers citing its sources.">Mesa de ayuda con asistente de IA (RAG): busca soluciones en una base de conocimiento vectorizada en Qdrant mediante flujos de n8n y responde citando sus fuentes.</p>
+                                            <ul class="tag-list" aria-label="Tecnologías de NEXUS Support" data-en-label="NEXUS Support technologies">
                                                 <li class="tag">Java</li>
                                                 <li class="tag">Spring Boot</li>
                                                 <li class="tag">PostgreSQL</li>
+                                                <li class="tag">n8n</li>
+                                                <li class="tag">Qdrant</li>
+                                                <li class="tag">Docker</li>
                                             </ul>
                                         </div>
 
                                         <div class="project-actions">
-                                            <a class="button button-primary" href="projects/vart.html">
-                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            <a class="button button-primary" href="projects/nexus-support.html" data-en="View project &lt;span class=&quot;button-arrow&quot; aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;" data-i18n-html>
+                                                Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>
                                             </a>
-                                            <button class="button button-secondary button-placeholder" type="button" disabled>
-                                                GitHub · pending URL
-                                            </button>
+                                            <a class="button button-secondary" href="https://github.com/julianovalle23/NEXUSS" target="_blank" rel="noopener noreferrer">
+                                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
                                         </div>
                                     </div>
 
@@ -122,41 +124,131 @@
                         <article
                             class="project-card reveal-up"
                             data-project-card
-                            data-project-id="smartcity-fix"
-                            data-project-name="SmartCity Fix"
-                            data-project-primary-icon="n8n"
-                            data-project-primary-label="n8n"
-                            data-project-image-count="2"
+                            data-project-id="campusdesk"
+                            data-project-name="CampusDesk"
+                            data-project-primary-icon="java"
+                            data-project-primary-label="Java"
                         >
                             <div class="project-card-flip" data-project-flip>
                                 <div class="project-card-flip-inner" data-project-flip-inner>
                                     <div class="project-card-face project-card-front">
                                         <div class="project-card-meta">
-                                            <p class="project-number">02 / Automation</p>
-                                            <span class="project-status status-pending">Status to define</span>
+                                            <p class="project-number" data-en="02 / Backend · Team">02 / Backend · Equipo</p>
+                                            <span class="project-status" data-en="Completed">Completado</span>
                                         </div>
 
                                         <div class="project-content">
-                                            <h2>SmartCity Fix</h2>
-                                            <p class="project-description">
-                                                Proyecto relacionado con la clasificación y gestión de reportes de problemas
-                                                urbanos mediante automatización.
-                                            </p>
-                                            <ul class="tag-list" aria-label="Tecnologías de SmartCity Fix">
-                                                <li class="tag">Web</li>
-                                                <li class="tag">n8n</li>
-                                                <li class="tag">AI</li>
-                                                <li class="tag">Automation</li>
+                                            <h2 data-en="CampusDesk">CampusDesk</h2>
+                                            <p class="project-description" data-en="Help desk web app with a ticket lifecycle, three roles, and JWT authentication. Built by a team of four.">Mesa de ayuda web con ciclo de vida de tickets, tres roles y autenticación JWT. Proyecto desarrollado en un equipo de cuatro personas.</p>
+                                            <ul class="tag-list" aria-label="Tecnologías de CampusDesk" data-en-label="CampusDesk technologies">
+                                                <li class="tag">Java</li>
+                                                <li class="tag">Spring Boot</li>
+                                                <li class="tag">Spring Security</li>
+                                                <li class="tag">JWT</li>
+                                                <li class="tag">PostgreSQL</li>
                                             </ul>
                                         </div>
 
                                         <div class="project-actions">
-                                            <a class="button button-primary" href="projects/smartcity-fix.html">
-                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            <a class="button button-primary" href="projects/campusdesk.html" data-en="View project &lt;span class=&quot;button-arrow&quot; aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;" data-i18n-html>
+                                                Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>
                                             </a>
-                                            <button class="button button-secondary button-placeholder" type="button" disabled>
-                                                GitHub · pending URL
-                                            </button>
+                                            <a class="button button-secondary" href="https://github.com/julianovalle23/CampusDesk" target="_blank" rel="noopener noreferrer">
+                                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card-face project-card-back" data-project-back aria-hidden="true">
+                                        <div class="project-card-back-content" data-project-back-content></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="project-entry" data-project-entry>
+                        <article
+                            class="project-card reveal-up"
+                            data-project-card
+                            data-project-id="techstore"
+                            data-project-name="TechStore"
+                            data-project-primary-icon="spring-boot"
+                            data-project-primary-label="Spring Boot"
+                        >
+                            <div class="project-card-flip" data-project-flip>
+                                <div class="project-card-flip-inner" data-project-flip-inner>
+                                    <div class="project-card-face project-card-front">
+                                        <div class="project-card-meta">
+                                            <p class="project-number" data-en="03 / Backend">03 / Backend</p>
+                                            <span class="project-status" data-en="Completed">Completado</span>
+                                        </div>
+
+                                        <div class="project-content">
+                                            <h2 data-en="TechStore">TechStore</h2>
+                                            <p class="project-description" data-en="Computer store with a public catalog, an admin panel, and orders that check and deduct stock, with role-based permissions.">Tienda de computadores con catálogo público, panel de administración y pedidos que validan y descuentan stock, con permisos por rol.</p>
+                                            <ul class="tag-list" aria-label="Tecnologías de TechStore" data-en-label="TechStore technologies">
+                                                <li class="tag">Java 21</li>
+                                                <li class="tag">Spring Boot</li>
+                                                <li class="tag">Gradle</li>
+                                                <li class="tag">JWT</li>
+                                                <li class="tag">PostgreSQL</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="project-actions">
+                                            <a class="button button-primary" href="projects/techstore.html" data-en="View project &lt;span class=&quot;button-arrow&quot; aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;" data-i18n-html>
+                                                Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                            <a class="button button-secondary" href="https://github.com/julianovalle23/techstore" target="_blank" rel="noopener noreferrer">
+                                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card-face project-card-back" data-project-back aria-hidden="true">
+                                        <div class="project-card-back-content" data-project-back-content></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="project-entry" data-project-entry>
+                        <article
+                            class="project-card reveal-up"
+                            data-project-card
+                            data-project-id="chatbot-ventas"
+                            data-project-name="Chatbot de ventas en Telegram"
+                            data-project-primary-icon="n8n"
+                            data-project-primary-label="n8n"
+                        >
+                            <div class="project-card-flip" data-project-flip>
+                                <div class="project-card-flip-inner" data-project-flip-inner>
+                                    <div class="project-card-face project-card-front">
+                                        <div class="project-card-meta">
+                                            <p class="project-number" data-en="04 / Automation · Team">04 / Automatización · Equipo</p>
+                                            <span class="project-status" data-en="MVP">MVP</span>
+                                        </div>
+
+                                        <div class="project-content">
+                                            <h2 data-en="Telegram Sales Chatbot">Chatbot de ventas en Telegram</h2>
+                                            <p class="project-description" data-en="n8n conversational agent that serves customers on Telegram, checks a JSON catalog, and guides the purchase with conversation memory.">Agente conversacional en n8n que atiende clientes por Telegram, consulta un catálogo JSON y guía el proceso de compra con memoria de conversación.</p>
+                                            <ul class="tag-list" aria-label="Tecnologías de Chatbot de ventas en Telegram" data-en-label="Telegram Sales Chatbot technologies">
+                                                <li class="tag">n8n</li>
+                                                <li class="tag">Telegram</li>
+                                                <li class="tag">OpenRouter</li>
+                                                <li class="tag">AI Agent</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="project-actions">
+                                            <a class="button button-primary" href="projects/chatbot-ventas.html" data-en="View project &lt;span class=&quot;button-arrow&quot; aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;" data-i18n-html>
+                                                Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
+                                            <a class="button button-secondary" href="https://github.com/julianovalle23/streamcrack_N8N" target="_blank" rel="noopener noreferrer">
+                                                GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                                            </a>
                                         </div>
                                     </div>
 
@@ -173,26 +265,24 @@
                             class="project-card reveal-up"
                             data-project-card
                             data-project-id="portfolio"
-                            data-project-name="This Portfolio"
+                            data-project-name="Este portafolio"
                             data-project-primary-icon="html5"
                             data-project-primary-label="HTML5"
-                            data-project-image-count="2"
+                            data-project-images='["../assets/images/projects/portfolio/home.png","../assets/images/projects/portfolio/projects.png"]'
+                            data-project-image-labels="Inicio|Proyectos"
                         >
                             <div class="project-card-flip" data-project-flip>
                                 <div class="project-card-flip-inner" data-project-flip-inner>
                                     <div class="project-card-face project-card-front">
                                         <div class="project-card-meta">
-                                            <p class="project-number">03 / Web</p>
-                                            <span class="project-status">Available</span>
+                                            <p class="project-number" data-en="05 / Web">05 / Web</p>
+                                            <span class="project-status" data-en="Available">Disponible</span>
                                         </div>
 
                                         <div class="project-content">
-                                            <h2>This Portfolio</h2>
-                                            <p class="project-description">
-                                                Portafolio multipágina construido con HTML, CSS, JavaScript y Canvas para
-                                                presentar mi perfil, stack y proyectos.
-                                            </p>
-                                            <ul class="tag-list" aria-label="Tecnologías del portafolio">
+                                            <h2 data-en="This Portfolio">Este portafolio</h2>
+                                            <p class="project-description" data-en="Bilingual multipage portfolio built with HTML, CSS, JavaScript, and Canvas to showcase my profile, stack, and projects.">Portafolio multipágina y bilingüe construido con HTML, CSS, JavaScript y Canvas para presentar mi perfil, stack y proyectos.</p>
+                                            <ul class="tag-list" aria-label="Tecnologías de Este portafolio" data-en-label="This Portfolio technologies">
                                                 <li class="tag">HTML</li>
                                                 <li class="tag">CSS</li>
                                                 <li class="tag">JavaScript</li>
@@ -201,13 +291,10 @@
                                         </div>
 
                                         <div class="project-actions">
-                                            <a class="button button-primary" href="projects/portfolio.html">
-                                                View project <span class="button-arrow" aria-hidden="true">↗</span>
+                                            <a class="button button-primary" href="projects/portfolio.html" data-en="View project &lt;span class=&quot;button-arrow&quot; aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;" data-i18n-html>
+                                                Ver proyecto <span class="button-arrow" aria-hidden="true">↗</span>
                                             </a>
-                                            <a
-                                                class="button button-secondary"
-                                                href="https://github.com/julianovalle23"
-                                            >
+                                            <a class="button button-secondary" href="https://github.com/julianovalle23/Portafolio_JulianOv" target="_blank" rel="noopener noreferrer">
                                                 GitHub <span class="button-arrow" aria-hidden="true">↗</span>
                                             </a>
                                         </div>

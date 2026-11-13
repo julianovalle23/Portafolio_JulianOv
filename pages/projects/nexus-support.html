@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="NEXUS Support: mesa de ayuda con asistente de IA basado en RAG, construida con Java, Spring Boot, PostgreSQL, n8n y Qdrant."
+    >
+    <title data-en="NEXUS Support — Project 01 | Julian">NEXUS Support — Proyecto 01 | Julian</title>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="../about.html">About</a>
+            <a href="../stack.html">Stack</a>
+            <a href="../projects.html" aria-current="page">Projects</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="../contact.html">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="page-hero project-detail-hero" aria-labelledby="nexus-support-title">
+                <a class="breadcrumb reveal-up" href="../projects.html" data-en="← All projects">← Todos los proyectos</a>
+
+                <div class="page-kicker reveal-up">
+                    <span data-en="Project 01">Proyecto 01</span>
+                    <span class="project-status" data-en="Completed">Completado</span>
+                </div>
+
+                <h1 class="project-detail-title reveal-up" id="nexus-support-title" data-en="NEXUS Support">NEXUS Support</h1>
+                <p class="project-detail-summary reveal-up" data-en="Technology incident management platform with a RAG-based smart assistant. Spring Boot exposes the API, n8n orchestrates embeddings and the Qdrant search, and the language model answers only with knowledge-base content, citing its sources.">Plataforma de gestión de incidentes tecnológicos con un asistente inteligente basado en RAG. Spring Boot expone la API, n8n orquesta los embeddings y la búsqueda en Qdrant, y el modelo de lenguaje responde solo con información de la base de conocimiento, citando sus fuentes.</p>
+            </section>
+
+            <section class="content-section" aria-label="Información del proyecto" data-en-label="Project information">
+                <div class="detail-grid" data-reveal-group>
+                    <div class="detail-main reveal-left">
+                        <article class="detail-block">
+                            <h2>Problem</h2>
+                            <p data-en="Support technicians solve the same incidents over and over while solutions stay scattered. On top of that, a generic AI assistant can invent answers that do not exist in the company documentation.">Los técnicos de soporte resuelven una y otra vez los mismos incidentes y las soluciones quedan dispersas. Además, un asistente de IA genérico puede inventar respuestas que no existen en la documentación de la empresa.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Solution</h2>
+                            <p data-en="Every incident can request assistance: its description becomes an embedding, the closest articles are searched in Qdrant, anything below the similarity threshold or no longer active and verified in PostgreSQL is discarded, and only then does the model write solution steps from those documents. When there is not enough information, it says so instead of guessing.">Cada incidente puede pedir asistencia: su descripción se convierte en un embedding, se buscan los artículos más parecidos en Qdrant, se descartan los que no superan el umbral de similitud o ya no están activos y verificados en PostgreSQL, y solo entonces el modelo genera los pasos de solución a partir de esos documentos. Si no hay información suficiente, lo dice en vez de inventar.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Technologies</h2>
+                            <ul class="tag-list" aria-label="Tecnologías del proyecto" data-en-label="Project technologies">
+                                <li class="tag">Java 21</li>
+                                <li class="tag">Spring Boot 3.5</li>
+                                <li class="tag">Spring Data JPA</li>
+                                <li class="tag">PostgreSQL 16</li>
+                                <li class="tag">n8n</li>
+                                <li class="tag">Qdrant</li>
+                                <li class="tag">OpenRouter</li>
+                                <li class="tag">Docker Compose</li>
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">Chart.js</li>
+                                <li class="tag">Swagger</li>
+                            </ul>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Features</h2>
+                            <ul class="detail-list">
+                                <li data-en="Incident management with filters, statuses, and priority-based SLAs.">Gestión de incidentes con filtros, estados y SLA por prioridad.</li>
+                                <li data-en="Knowledge base: only active, verified articles are used as sources.">Base de conocimiento: solo los artículos activos y verificados se usan como fuente.</li>
+                                <li data-en="Incremental Qdrant indexing with SHA-256 hashes: no duplicate or stale vectors.">Indexación incremental en Qdrant con hash SHA-256: sin vectores duplicados ni obsoletos.</li>
+                                <li data-en="RAG assistant with a similarity threshold, 3 to 5 sources, and validation against the relational database.">Asistente RAG con umbral de similitud, entre 3 y 5 fuentes y validación contra la base relacional.</li>
+                                <li data-en="Errors recorded per stage (embeddings, Qdrant, generation) without losing the request.">Errores registrados por etapa (embeddings, Qdrant, generación) sin perder la consulta.</li>
+                                <li data-en="Request history and 1–5 answer ratings.">Historial de consultas y calificación de respuestas de 1 a 5.</li>
+                                <li data-en="Analytics dashboard on native SQL: weekly trend, categories, and SLA compliance.">Dashboard analítico con SQL nativo: tendencia semanal, categorías y cumplimiento de SLA.</li>
+                                <li data-en="API documented with Swagger and a Postman collection.">API documentada con Swagger y colección de Postman.</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <aside class="detail-aside reveal-right" aria-label="Resumen del proyecto" data-en-label="Project overview">
+                        <h2>Project details</h2>
+                        <ul class="detail-facts">
+                            <li><span data-en="Project">Proyecto</span><strong data-en="01">01</strong></li>
+                            <li><span data-en="Status">Estado</span><strong data-en="Completed">Completado</strong></li>
+                            <li><span data-en="Type">Tipo</span><strong data-en="Full stack + AI">Full stack + IA</strong></li>
+                            <li><span data-en="Year">Año</span><strong data-en="2026">2026</strong></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="nexus-support-flow-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>01</span><span data-en="Architecture">Arquitectura</span></p>
+                <h2 class="section-title reveal-up" id="nexus-support-flow-title" data-en="How the assistant answers">Cómo responde el asistente</h2>
+                <ol class="flow-steps">
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">01</span>
+                        <div>
+                            <h3 data-en="Spring Boot">Spring Boot</h3>
+                            <p data-en="Checks the description is not empty and records the request as PENDING.">Valida que la descripción no esté vacía y registra la consulta como PENDIENTE.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">02</span>
+                        <div>
+                            <h3 data-en="Embedding · n8n + OpenRouter">Embedding · n8n + OpenRouter</h3>
+                            <p data-en="The n8n workflow turns the description into a 1536-dimension vector.">El flujo de n8n convierte la descripción en un vector de 1536 dimensiones.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">03</span>
+                        <div>
+                            <h3 data-en="Search · Qdrant">Búsqueda · Qdrant</h3>
+                            <p data-en="Retrieves the closest articles by cosine similarity, only among valid sources.">Recupera los artículos más cercanos por similitud coseno, solo entre fuentes válidas.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">04</span>
+                        <div>
+                            <h3 data-en="Filters">Filtros</h3>
+                            <p data-en="Applies the 0.45 threshold and confirms in PostgreSQL that each article is still active and verified.">Aplica el umbral de 0.45 y confirma en PostgreSQL que cada artículo siga activo y verificado.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">05</span>
+                        <div>
+                            <h3 data-en="Generation">Generación</h3>
+                            <p data-en="The model receives only those documents and returns a solution, steps, and the sources used as JSON.">El modelo recibe solo esos documentos y devuelve solución, pasos y fuentes usadas en JSON.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">06</span>
+                        <div>
+                            <h3 data-en="Persistence">Persistencia</h3>
+                            <p data-en="Spring Boot revalidates the sources and stores the answer with its similarities for the history.">Spring Boot revalida las fuentes y guarda la respuesta con sus similitudes para el historial.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="content-section" aria-labelledby="nexus-support-example-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>02</span><span data-en="Real result">Resultado real</span></p>
+                <h2 class="section-title reveal-up" id="nexus-support-example-title" data-en="A sample request">Una consulta de ejemplo</h2>
+                <div class="rag-example">
+                    <div class="rag-example-panel reveal-up">
+                        <p class="rag-example-label" data-en="Incident">Incidente</p>
+                        <p class="rag-example-query">“El equipo no navega, el icono de red indica sin internet y la IP asignada es 169.254.10.4”</p>
+                        <p class="rag-example-label" data-en="Sources retrieved from Qdrant (cosine similarity)">Fuentes recuperadas de Qdrant (similitud coseno)</p>
+                        <ul class="rag-sources">
+                            <li class="is-used"><span>#2 · Sin internet: IP 169.254.x.x por falla de DHCP</span><strong>0.71</strong></li>
+                            <li><span>#1 · Equipo sin acceso a internet por cable de red</span><strong>0.69</strong></li>
+                            <li><span>#4 · Wi-Fi corporativo conectado pero sin internet</span><strong>0.59</strong></li>
+                            <li><span>#3 · Navegación lenta por fallo de DNS</span><strong>0.54</strong></li>
+                            <li><span>#6 · Proxy mal configurado impide la navegación</span><strong>0.52</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="rag-example-panel reveal-up">
+                        <p class="rag-example-label" data-en="Generated answer · status RESPONDIDA">Respuesta generada · estado RESPONDIDA</p>
+                        <p class="rag-example-answer">El equipo no obtiene dirección del servidor DHCP, lo que provoca que reciba una IP autoasignada.</p>
+                        <ol class="rag-steps">
+                            <li>Ejecutar <code>ipconfig /release</code> y luego <code>ipconfig /renew</code>.</li>
+                            <li>Si persiste, reiniciar el adaptador de red.</li>
+                            <li>Verificar con Redes la disponibilidad de direcciones en el ámbito DHCP de la VLAN.</li>
+                            <li>Como contingencia, asignar IP estática temporal de la reserva documentada.</li>
+                            <li>Registrar la MAC del equipo en el incidente.</li>
+                        </ol>
+                        <p class="rag-example-note" data-en="Uncovered case: for “the warehouse fingerprint reader does not register new employees” the best similarity was 0.39, below the 0.45 threshold. The system answers SIN_RESULTADOS and never calls the model instead of making up a fix.">Caso sin cobertura: para “el lector biométrico de la bodega no registra empleados nuevos” la mejor similitud fue 0.39, por debajo del umbral de 0.45. El sistema responde SIN_RESULTADOS y no llama al modelo, en lugar de inventar una solución.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="nexus-support-numbers-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>03</span><span data-en="Data">Datos</span></p>
+                <h2 class="section-title reveal-up" id="nexus-support-numbers-title" data-en="The project in numbers">El proyecto en cifras</h2>
+                <div class="metric-grid">
+                    <div class="metric reveal-up">
+                        <strong>160</strong>
+                        <span data-en="sample incidents for analysis">incidentes de ejemplo para el análisis</span>
+                    </div>
+                    <div class="metric reveal-up">
+                        <strong>28</strong>
+                        <span data-en="knowledge articles (26 valid sources)">artículos de conocimiento (26 válidos como fuente)</span>
+                    </div>
+                    <div class="metric reveal-up">
+                        <strong>2</strong>
+                        <span data-en="n8n workflows: indexing and RAG">flujos de n8n: indexación y RAG</span>
+                    </div>
+                    <div class="metric reveal-up">
+                        <strong>10</strong>
+                        <span data-en="automated functional tests">pruebas funcionales automatizadas</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="nexus-support-screenshots-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>04</span><span>Screenshots</span></p>
+                <h2 class="section-title reveal-up" id="nexus-support-screenshots-title">Project preview</h2>
+
+                <div class="screenshots-grid">
+                    <figure class="screenshot reveal-up">
+                        <img src="../../assets/images/projects/nexus-support/dashboard.png" alt="Dashboard analítico con indicadores y tendencia semanal" data-en-alt="Analytics dashboard with KPIs and weekly trend" loading="lazy" width="1440" height="900">
+                        <figcaption data-en="Analytics dashboard with KPIs and weekly trend">Dashboard analítico con indicadores y tendencia semanal</figcaption>
+                    </figure>
+                    <figure class="screenshot reveal-up">
+                        <img src="../../assets/images/projects/nexus-support/incidentes.png" alt="Listado de incidentes con filtros" data-en-alt="Incident list with filters" loading="lazy" width="1440" height="900">
+                        <figcaption data-en="Incident list with filters">Listado de incidentes con filtros</figcaption>
+                    </figure>
+                    <figure class="screenshot reveal-up">
+                        <img src="../../assets/images/projects/nexus-support/articulos.png" alt="Base de conocimiento: artículos usados como fuente del RAG" data-en-alt="Knowledge base: articles used as RAG sources" loading="lazy" width="1440" height="900">
+                        <figcaption data-en="Knowledge base: articles used as RAG sources">Base de conocimiento: artículos usados como fuente del RAG</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="nexus-support-links-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>05</span><span>Links</span></p>
+                <h2 class="section-title" id="nexus-support-links-title">Repository &amp; demo</h2>
+
+                <div class="project-links">
+                    <a class="button button-secondary" href="https://github.com/julianovalle23/NEXUSS" target="_blank" rel="noopener noreferrer">
+                        GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/reveal.js"></script>
+</body>
+
+</html>

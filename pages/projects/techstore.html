@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="TechStore: tienda de computadores con Spring Boot, JWT, permisos por rol y PostgreSQL."
+    >
+    <title data-en="TechStore — Project 03 | Julian">TechStore — Proyecto 03 | Julian</title>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="../about.html">About</a>
+            <a href="../stack.html">Stack</a>
+            <a href="../projects.html" aria-current="page">Projects</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="../contact.html">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="page-hero project-detail-hero" aria-labelledby="techstore-title">
+                <a class="breadcrumb reveal-up" href="../projects.html" data-en="← All projects">← Todos los proyectos</a>
+
+                <div class="page-kicker reveal-up">
+                    <span data-en="Project 03">Proyecto 03</span>
+                    <span class="project-status" data-en="Completed">Completado</span>
+                </div>
+
+                <h1 class="project-detail-title reveal-up" id="techstore-title" data-en="TechStore">TechStore</h1>
+                <p class="project-detail-summary reveal-up" data-en="API and frontend for a computer and accessories store: a public catalog, an admin panel, and order management with stock control.">API y frontend para una tienda de computadores y accesorios: catálogo público, panel de administración y gestión de pedidos con control de stock.</p>
+            </section>
+
+            <section class="content-section" aria-label="Información del proyecto" data-en-label="Project information">
+                <div class="detail-grid" data-reveal-group>
+                    <div class="detail-main reveal-left">
+                        <article class="detail-block">
+                            <h2>Problem</h2>
+                            <p data-en="A store needs to show its catalog without exposing internal data while recording orders without selling products it does not have in stock.">Una tienda necesita mostrar su catálogo sin exponer datos internos y, al mismo tiempo, registrar pedidos sin vender productos que no tiene en existencia.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Solution</h2>
+                            <p data-en="A Spring Boot backend with JWT security and per-module permissions. The catalog is public and hides the minimum stock; every order checks availability, copies the price, computes the total, and deducts stock, and cancelling it returns the units.">Un backend en Spring Boot con seguridad JWT y permisos por módulo. El catálogo es público y oculta el stock mínimo; cada pedido valida existencias, copia el precio, calcula el total y descuenta el stock, y cancelarlo devuelve las unidades.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Technologies</h2>
+                            <ul class="tag-list" aria-label="Tecnologías del proyecto" data-en-label="Project technologies">
+                                <li class="tag">Java 21</li>
+                                <li class="tag">Spring Boot 4</li>
+                                <li class="tag">Gradle</li>
+                                <li class="tag">Spring Security</li>
+                                <li class="tag">JWT</li>
+                                <li class="tag">PostgreSQL</li>
+                                <li class="tag">Swagger</li>
+                                <li class="tag">H2</li>
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Features</h2>
+                            <ul class="detail-list">
+                                <li data-en="Public catalog with no login, filterable by category and name.">Catálogo público sin inicio de sesión, con filtros por categoría y nombre.</li>
+                                <li data-en="Granular per-module permissions: categories, items, and orders.">Permisos granulares por módulo: categorías, artículos y pedidos.</li>
+                                <li data-en="Orders that check stock and compute the total; cancelling returns the units.">Pedidos que validan stock y calculan el total; la cancelación devuelve las unidades.</li>
+                                <li data-en="Low-stock report for the administrator.">Reporte de artículos con stock bajo para el administrador.</li>
+                                <li data-en="Integrity rule: a category with items cannot be deleted.">Regla de integridad: no se puede eliminar una categoría que tenga artículos.</li>
+                                <li data-en="11 automated tests on H2, including the stock and permissions flow.">11 pruebas automatizadas sobre H2, incluido el flujo de stock y permisos.</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <aside class="detail-aside reveal-right" aria-label="Resumen del proyecto" data-en-label="Project overview">
+                        <h2>Project details</h2>
+                        <ul class="detail-facts">
+                            <li><span data-en="Project">Proyecto</span><strong data-en="03">03</strong></li>
+                            <li><span data-en="Status">Estado</span><strong data-en="Completed">Completado</strong></li>
+                            <li><span data-en="Type">Tipo</span><strong data-en="Backend + frontend">Backend + frontend</strong></li>
+                            <li><span data-en="Build">Build</span><strong data-en="Gradle">Gradle</strong></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="techstore-links-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>01</span><span>Links</span></p>
+                <h2 class="section-title" id="techstore-links-title">Repository &amp; demo</h2>
+
+                <div class="project-links">
+                    <a class="button button-secondary" href="https://github.com/julianovalle23/techstore" target="_blank" rel="noopener noreferrer">
+                        GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/reveal.js"></script>
+</body>
+
+</html>

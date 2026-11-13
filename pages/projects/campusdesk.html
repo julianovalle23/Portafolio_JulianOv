@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="CampusDesk: mesa de ayuda web con Spring Boot, Spring Security, JWT y PostgreSQL, desarrollada en equipo."
+    >
+    <title data-en="CampusDesk — Project 02 | Julian">CampusDesk — Proyecto 02 | Julian</title>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="../about.html">About</a>
+            <a href="../stack.html">Stack</a>
+            <a href="../projects.html" aria-current="page">Projects</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="../contact.html">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="page-hero project-detail-hero" aria-labelledby="campusdesk-title">
+                <a class="breadcrumb reveal-up" href="../projects.html" data-en="← All projects">← Todos los proyectos</a>
+
+                <div class="page-kicker reveal-up">
+                    <span data-en="Project 02">Proyecto 02</span>
+                    <span class="project-status" data-en="Completed">Completado</span>
+                </div>
+
+                <h1 class="project-detail-title reveal-up" id="campusdesk-title" data-en="CampusDesk">CampusDesk</h1>
+                <p class="project-detail-summary reveal-up" data-en="Help desk web platform for TechNova Solutions. Users report hardware, software, network, or access issues, and the tech team handles them through a lifecycle enforced by the backend. Built by a team of four.">Plataforma web de mesa de ayuda para TechNova Solutions. Los usuarios reportan incidencias de hardware, software, redes o accesos, y el equipo técnico las atiende siguiendo un ciclo de vida controlado por el backend. Proyecto desarrollado en un equipo de cuatro personas.</p>
+            </section>
+
+            <section class="content-section" aria-label="Información del proyecto" data-en-label="Project information">
+                <div class="detail-grid" data-reveal-group>
+                    <div class="detail-main reveal-left">
+                        <article class="detail-block">
+                            <h2>Problem</h2>
+                            <p data-en="An organization&#x27;s technology issues get reported through informal channels, with no assigned owner and no way to track their status.">Las incidencias tecnológicas de una organización se reportan por canales informales, sin un responsable asignado ni trazabilidad de su estado.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Solution</h2>
+                            <p data-en="A ticketing system with three roles (user, technician, and admin), technician assignment, comments, an immutable status history, and a service rating once the ticket is closed.">Un sistema de tickets con tres roles (usuario, técnico y administrador), asignación de técnicos, comentarios, historial inmutable de cambios de estado y calificación del servicio una vez cerrado el ticket.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Technologies</h2>
+                            <ul class="tag-list" aria-label="Tecnologías del proyecto" data-en-label="Project technologies">
+                                <li class="tag">Java 17</li>
+                                <li class="tag">Spring Boot 3.3</li>
+                                <li class="tag">Spring Security</li>
+                                <li class="tag">JWT</li>
+                                <li class="tag">Spring Data JPA</li>
+                                <li class="tag">PostgreSQL</li>
+                                <li class="tag">Swagger</li>
+                                <li class="tag">JUnit 5</li>
+                                <li class="tag">Mockito</li>
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Features</h2>
+                            <ul class="detail-list">
+                                <li data-en="OPEN → ASSIGNED → IN_PROGRESS → RESOLVED → CLOSED lifecycle enforced by the backend.">Ciclo ABIERTA → ASIGNADA → EN_PROCESO → RESUELTA → CERRADA validado en el backend.</li>
+                                <li data-en="JWT authentication with different permissions for user, technician, and admin.">Autenticación con JWT y permisos distintos para usuario, técnico y administrador.</li>
+                                <li data-en="Comments and status-change history per ticket.">Comentarios e historial de cambios de estado por ticket.</li>
+                                <li data-en="SQL schema with CHECK constraints, triggers, and a statistics view.">Esquema SQL con restricciones CHECK, triggers y una vista de estadísticas.</li>
+                                <li data-en="Startup environment checks: fails fast when configuration is missing or the database is down.">Validación del entorno al arrancar: falla rápido si falta configuración o la base no responde.</li>
+                                <li data-en="Tests with JUnit 5, Mockito, and AssertJ; API documented with Swagger.">Pruebas con JUnit 5, Mockito y AssertJ; API documentada con Swagger.</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <aside class="detail-aside reveal-right" aria-label="Resumen del proyecto" data-en-label="Project overview">
+                        <h2>Project details</h2>
+                        <ul class="detail-facts">
+                            <li><span data-en="Project">Proyecto</span><strong data-en="02">02</strong></li>
+                            <li><span data-en="Status">Estado</span><strong data-en="Completed">Completado</strong></li>
+                            <li><span data-en="Team">Equipo</span><strong data-en="4 members">4 integrantes</strong></li>
+                            <li><span data-en="Type">Tipo</span><strong data-en="Backend + frontend">Backend + frontend</strong></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="campusdesk-links-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>01</span><span>Links</span></p>
+                <h2 class="section-title" id="campusdesk-links-title">Repository &amp; demo</h2>
+
+                <div class="project-links">
+                    <a class="button button-secondary" href="https://github.com/julianovalle23/CampusDesk" target="_blank" rel="noopener noreferrer">
+                        GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/reveal.js"></script>
+</body>
+
+</html>

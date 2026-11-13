@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+  <title>RAG con modelos de lenguaje</title>
+  <g fill="none" stroke="#32a86b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M14 8h22l10 10v14M46 46v10H14V8"/>
+    <path d="M36 8v10h10M21 26h14M21 35h8"/>
+    <path d="M47 34l2.5 6.5L56 43l-6.5 2.5L47 52l-2.5-6.5L38 43l6.5-2.5L47 34Z"/>
+  </g>
+</svg>

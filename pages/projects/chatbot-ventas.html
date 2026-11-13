@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Chatbot de ventas en Telegram construido con n8n, un AI Agent y OpenRouter."
+    >
+    <title data-en="Telegram Sales Chatbot — Project 04 | Julian">Chatbot de ventas en Telegram — Proyecto 04 | Julian</title>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+
+    <!-- Fondo animado -->
+    <canvas id="bg"></canvas>
+
+    <header class="site-nav" data-site-nav>
+        <a class="brand" href="../../index.html">J.</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir navegación"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+        >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal" data-nav-menu>
+            <a href="../about.html">About</a>
+            <a href="../stack.html">Stack</a>
+            <a href="../projects.html" aria-current="page">Projects</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-contact" href="../contact.html">
+            Let's talk <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main id="main-content">
+        <div class="page-shell">
+            <section class="page-hero project-detail-hero" aria-labelledby="chatbot-ventas-title">
+                <a class="breadcrumb reveal-up" href="../projects.html" data-en="← All projects">← Todos los proyectos</a>
+
+                <div class="page-kicker reveal-up">
+                    <span data-en="Project 04">Proyecto 04</span>
+                    <span class="project-status" data-en="MVP">MVP</span>
+                </div>
+
+                <h1 class="project-detail-title reveal-up" id="chatbot-ventas-title" data-en="Telegram Sales Chatbot">Chatbot de ventas en Telegram</h1>
+                <p class="project-detail-summary reveal-up" data-en="Conversational agent built in n8n that serves customers on Telegram around the clock: it answers prices and availability, recommends streaming plans, and guides the purchase. Built as a team.">Agente conversacional construido en n8n que atiende clientes por Telegram las 24 horas: responde precios y disponibilidad, recomienda planes de plataformas de streaming y guía el proceso de compra. Desarrollado en equipo.</p>
+            </section>
+
+            <section class="content-section" aria-label="Información del proyecto" data-en-label="Project information">
+                <div class="detail-grid" data-reveal-group>
+                    <div class="detail-main reveal-left">
+                        <article class="detail-block">
+                            <h2>Problem</h2>
+                            <p data-en="Answering the same price, stock, and plan questions by hand takes time and leaves customers without an answer outside business hours.">Responder a mano las mismas preguntas de precios, stock y planes consume tiempo y deja a los clientes sin respuesta fuera del horario de atención.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Solution</h2>
+                            <p data-en="An n8n workflow with an AI Agent connected to Telegram, an OpenRouter model, conversation memory, and a JSON catalog as the source of prices and stock.">Un flujo de n8n con un AI Agent conectado a Telegram, un modelo de OpenRouter, memoria de conversación y un catálogo en JSON como fuente de precios y existencias.</p>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Technologies</h2>
+                            <ul class="tag-list" aria-label="Tecnologías del proyecto" data-en-label="Project technologies">
+                                <li class="tag">n8n</li>
+                                <li class="tag">Telegram Bot API</li>
+                                <li class="tag">OpenRouter</li>
+                                <li class="tag">AI Agent</li>
+                                <li class="tag">JSON</li>
+                            </ul>
+                        </article>
+
+                        <article class="detail-block">
+                            <h2>Features</h2>
+                            <ul class="detail-list">
+                                <li data-en="Automatic answers about prices, availability, and plan features.">Respuestas automáticas sobre precios, disponibilidad y características de cada plan.</li>
+                                <li data-en="Recommendations based on what the customer asks for.">Recomendaciones según lo que pide el cliente.</li>
+                                <li data-en="Conversation memory to keep the chat context.">Memoria conversacional para mantener el contexto del chat.</li>
+                                <li data-en="Guided sales flow: greeting, needs, recommendation, price, receipt, and confirmation.">Proceso de venta guiado: saludo, necesidades, recomendación, precio, comprobante y confirmación.</li>
+                                <li data-en="JSON catalog that is easy to update without touching the workflow.">Catálogo en JSON fácil de actualizar sin tocar el flujo.</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <aside class="detail-aside reveal-right" aria-label="Resumen del proyecto" data-en-label="Project overview">
+                        <h2>Project details</h2>
+                        <ul class="detail-facts">
+                            <li><span data-en="Project">Proyecto</span><strong data-en="04">04</strong></li>
+                            <li><span data-en="Status">Estado</span><strong data-en="MVP">MVP</strong></li>
+                            <li><span data-en="Team">Equipo</span><strong data-en="3 members">3 integrantes</strong></li>
+                            <li><span data-en="Type">Tipo</span><strong data-en="Automation">Automatización</strong></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="chatbot-ventas-flow-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>01</span><span data-en="Architecture">Arquitectura</span></p>
+                <h2 class="section-title reveal-up" id="chatbot-ventas-flow-title" data-en="How a conversation flows">Cómo fluye una conversación</h2>
+                <ol class="flow-steps">
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">01</span>
+                        <div>
+                            <h3 data-en="Telegram Trigger">Telegram Trigger</h3>
+                            <p data-en="The customer&#x27;s message starts the n8n workflow.">El mensaje del cliente inicia el flujo de n8n.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">02</span>
+                        <div>
+                            <h3 data-en="AI Agent">AI Agent</h3>
+                            <p data-en="Understands the intent with an OpenRouter model and checks the JSON catalog and memory.">Interpreta la intención con un modelo de OpenRouter y consulta el catálogo JSON y la memoria.</p>
+                        </div>
+                    </li>
+                    <li class="flow-step reveal-up">
+                        <span class="flow-index">03</span>
+                        <div>
+                            <h3 data-en="Reply">Respuesta</h3>
+                            <p data-en="Sends the reply on Telegram and continues the sales flow.">Envía la respuesta por Telegram y continúa el proceso de venta.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="content-section" aria-labelledby="chatbot-ventas-links-title" data-reveal-group>
+                <p class="section-label reveal-up"><span>02</span><span>Links</span></p>
+                <h2 class="section-title" id="chatbot-ventas-links-title">Repository &amp; demo</h2>
+
+                <div class="project-links">
+                    <a class="button button-secondary" href="https://github.com/julianovalle23/streamcrack_N8N" target="_blank" rel="noopener noreferrer">
+                        GitHub <span class="button-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Julian</span>
+        <span>Junior Software Developer</span>
+        <span>Colombia</span>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/reveal.js"></script>
+</body>
+
+</html>

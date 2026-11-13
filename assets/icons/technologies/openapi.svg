@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+  <title>Swagger y OpenAPI</title>
+  <g fill="none" stroke="#32a86b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M22 10h-4a6 6 0 0 0-6 6v8a6 6 0 0 1-6 6v4a6 6 0 0 1 6 6v8a6 6 0 0 0 6 6h4M42 10h4a6 6 0 0 1 6 6v8a6 6 0 0 0 6 6v4a6 6 0 0 0-6 6v8a6 6 0 0 1-6 6h-4"/>
+    <circle cx="25" cy="32" r="1.5"/><circle cx="32" cy="32" r="1.5"/><circle cx="39" cy="32" r="1.5"/>
+  </g>
+</svg>

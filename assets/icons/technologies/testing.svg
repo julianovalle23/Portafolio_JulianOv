@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+  <title>JUnit 5 y Mockito</title>
+  <g fill="none" stroke="#32a86b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <rect x="8" y="8" width="48" height="48" rx="4"/>
+    <path d="m20 33 8 8 16-18"/>
+  </g>
+</svg>
